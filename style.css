@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body {
+  background: black;
+  margin: 2px;
+  font-family: sans-serif;
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.logo {
+  display: block;
+  width: 500px;
+  min-width: 440px;
+  margin: 10px auto;
+}
+
+.row-label {
+  margin: 10px 0px;
+  margin-top: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.row {
+  /* position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px; */
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  /*83px + 60px*/
+  padding-bottom: 20px;
+}
+
+.warning {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2px 4px;
+  background: #e2e2e2;
+  color: #121212;
+  font-size: 15px;
+  border-radius: 4px;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.album {
+  display: inline-block;
+  width: 250px;
+  height: 340px;
+  margin: 0 20px;
+}
+
+.cover {
+  float: left;
+  width: 100%;
+}
+
+.title {
+  margin: 5px 0px;
+  float: left;
+  width: 100%;
+  line-height: 25px;
+  text-align: center;
+  white-space: break-spaces;
+}
+
+.links {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.links p {
+  color: gray;
+  float: left;
+  display: block;
+  height: 30px;
+  margin: 5px 10px;;
+}
+
+.links .icon {
+  float: left;
+  display: block;
+  height: 30px;
+  margin: 5px 10px;;
+}

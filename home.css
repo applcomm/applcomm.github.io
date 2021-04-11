@@ -1,0 +1,138 @@
+body {
+  background: black;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 500px;
+}
+
+.logo-container {
+  display: block;
+  float: left;
+  height: 175px;
+  margin: calc(50vh - calc(175px / 2)) 0px;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+@keyframes cursor-motion {
+  0% {
+    left: calc(10vw + 480px);
+    top: calc(calc(50vh - calc(175px / 2)) + 175px);
+    width: 30px;
+    height: 42px;
+    background-image: url('/assets/default.png');
+    background-size: 30px 42px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  24% {
+    width: 30px;
+    height: 42px;
+    background-image: url('/assets/default.png');
+    background-size: 30px 42px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  25% {
+    background-image: url('/assets/pointer.png');
+    width: 37px;
+    height: 39px;
+    background-size: 37px 39px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  50% {
+    left: calc(10vw + 460px);
+    top: calc(calc(50vh - calc(175px / 2)) + 155px);
+    background-image: url('/assets/pointer.png');
+  }
+
+  75% {
+    background-image: url('/assets/pointer.png');
+    width: 37px;
+    height: 39px;
+    background-size: 37px 39px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  76% {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 42px;
+    background-image: url('/assets/default.png');
+    background-size: 30px 42px;
+  }
+
+  100% {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 42px;
+    background-size: 30px 42px;
+    left: calc(10vw + 480px);
+    top: calc(calc(50vh - calc(175px / 2)) + 175px);
+  }
+}
+
+.cursor {
+  position: fixed;
+  left: calc(10vw + 480px);
+  top: calc(calc(50vh - calc(175px / 2)) + 175px);
+  width: 30px;
+  height: 42px;
+  background-image: url('/assets/default.png');
+  background-size: 30px 42px;
+  animation-duration: 8s;
+  animation-name: cursor-motion;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tip-motion {
+  0% {
+    opacity: 0;
+  }
+
+  24% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  76% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.tooltip {
+  position: fixed;
+  left: calc(10vw + 480px);
+  top: calc(calc(50vh - calc(175px / 2)) + 195px);
+  text-align: center;
+  padding: 2px 4px;
+  background: #e2e2e2;
+  color: #121212;
+  border-radius: 4px;
+  overflow: hidden;
+  animation-duration: 8s;
+  animation-name: tip-motion;
+  animation-iteration-count: infinite;
+}
